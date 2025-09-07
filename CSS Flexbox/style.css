@@ -1,0 +1,15 @@
+.container {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.item {
+  height: 32px;
+  width: 32px;
+  border: 2px solid black;
+  margin: 4px;
+  background-color: blueviolet;
+}
