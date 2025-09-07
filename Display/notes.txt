@@ -1,0 +1,5 @@
+| Property       | Block          | Inline                   | Inline-block       |
+| -------------- | -------------- | ------------------------ | ------------------ |
+| Line occupy    | Full line      | Only content width       | Only content width |
+| Width/Height   | Yes            | ❌ No                    | ✅ Yes            |
+| Margin/Padding | All sides work | Top/Bottom often ignored | All sides work     |

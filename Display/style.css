@@ -1,0 +1,23 @@
+.block-example {
+  display: block;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.inline-example {
+  display: inline;
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 6px;
+  width: 200px; /* This won't work */
+}
+
+.inline-block-example {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
