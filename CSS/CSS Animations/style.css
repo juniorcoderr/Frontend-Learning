@@ -1,0 +1,49 @@
+.container {
+  background-color: burlywood;
+  height: 80vh;
+  width: 30vw;
+}
+
+/* .box {
+  width: 34px;
+  height: 45px;
+  animation-name: myAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2;
+  animation-direction: alternate-reverse;
+  animation-play-state: paused;
+} */
+
+/* Using Multiple Animations */
+.box {
+  width: 34px;
+  height: 45px;
+  animation: myAnimation 2s ease-in-out 3s 1, myAnimation2 3s ease-in-out 3s 1;
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: palegoldenrod;
+    transform: translateX(1000px);
+  }
+}
+
+@keyframes myAnimation2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
