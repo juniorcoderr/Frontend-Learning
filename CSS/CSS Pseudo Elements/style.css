@@ -1,0 +1,11 @@
+p::first-line {
+  color: pink;
+}
+
+p::before {
+  content: " * ";
+}
+
+p::after {
+  content: " * ";
+}
