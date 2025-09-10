@@ -1,0 +1,20 @@
+.card {
+  border: 1px solid lightgrey;
+  padding: 16px;
+  background-color: white;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__description {
+  font-size: 16px;
+  color: grey;
+}
+
+.card--highlighted {
+  background-color: yellowgreen;
+  border-color: gold;
+}
