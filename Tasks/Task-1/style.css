@@ -1,0 +1,95 @@
+/* light theme colors */
+:root {
+  --header-bg: lightblue;
+  --left-bg: lightcyan;
+  --main-bg: lightgreen;
+  --right-bg: lightpink;
+  --text-color: black;
+}
+
+header,
+.left-sidebar,
+.main-content,
+.right-sidebar {
+  color: var(--text-color);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  /* using CSS variables */
+  background-color: var(--header-bg);
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.left-sidebar {
+  background-color: var(--left-bg);
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.main-content {
+  background-color: var(--main-bg);
+  width: 60%;
+  padding: 15px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right-sidebar {
+  background-color: var(--right-bg);
+  width: 20%;
+  padding: 15px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  min-height: 590px;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+label[for="theme-toggle"] {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-toggle:checked ~ body,
+#theme-toggle:checked ~ * {
+  --header-bg: black;
+  --left-bg: black;
+  --main-bg: black;
+  --right-bg: black;
+  --text-color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-sidebar,
+  .main-content,
+  .right-sidebar {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
