@@ -16,11 +16,15 @@ This is a simple responsive webpage with a **theme toggle** feature using only *
 
 ## 📁 Project Structure
 
+```
+
 project-folder/
 │
-├── index.html # Main HTML file
-├── style.css # CSS file with theme toggle logic
-└── README.md # You're reading it!
+├── index.html         # Main HTML file
+├── style.css          # CSS file with theme toggle logic
+└── README.md          # You're reading it!
+
+```
 
 ## 🧠 How It Works
 
