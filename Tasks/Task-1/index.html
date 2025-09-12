@@ -13,8 +13,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="checkbox" id="theme-toggle" />
-    <label for="theme-toggle">🌙/☀️</label>
+    <input type="radio" name="theme" id="auto-theme" checked hidden />
+    <input type="radio" name="theme" id="light-theme" hidden />
+    <input type="radio" name="theme" id="dark-theme" hidden />
+    <div class="theme-toggle">
+      <label for="auto-theme">🖥️ System</label>
+      <label for="light-theme">☀️ Light</label>
+      <label for="dark-theme">🌙 Dark</label>
+    </div>
+
     <header class="header">Header</header>
     <main class="container">
       <div class="left-sidebar">Left Sidebar</div>
