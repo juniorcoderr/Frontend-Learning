@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
-    <!-- Using Google Font -->
+
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -13,20 +14,139 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Theme Radio Inputs -->
     <input type="radio" name="theme" id="auto-theme" checked hidden />
     <input type="radio" name="theme" id="light-theme" hidden />
     <input type="radio" name="theme" id="dark-theme" hidden />
-    <div class="theme-toggle">
-      <label for="auto-theme">🖥️ System</label>
-      <label for="light-theme">☀️ Light</label>
-      <label for="dark-theme">🌙 Dark</label>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" role="radiogroup" aria-label="Theme Switcher">
+      <!-- Added aria roles for accessibility -->
+      <label for="auto-theme" tabindex="0">🖥️ System</label>
+      <label for="light-theme" tabindex="0">☀️ Light</label>
+      <label for="dark-theme" tabindex="0">🌙 Dark</label>
     </div>
 
-    <header class="header">Header</header>
+    <header class="header">
+      <h1>Welcome to My HTML5 Showcase</h1>
+    </header>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#form">Contact</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+
     <main class="container">
-      <div class="left-sidebar">Left Sidebar</div>
-      <div class="main-content">Main Content</div>
-      <div class="right-sidebar">Right Sidebar</div>
+      <div class="left-sidebar">
+        <!-- Table Section -->
+        <section>
+          <h2>HTML5 Topics Table</h2>
+          <table border="1" aria-label="HTML5 Topics Table">
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Forms</td>
+                <td>Input Types, Validation, Labels</td>
+              </tr>
+              <tr>
+                <td>Multimedia</td>
+                <td>Audio and Video Support</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>HTML5 Logo</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5 official logo"
+            width="100"
+            height="100"
+            style="display: block; margin: 0 auto 20px"
+          />
+        </section>
+      </div>
+
+      <div class="main-content">
+        <!-- About Section -->
+        <section id="about">
+          <h2>About HTML5</h2>
+          <p>
+            <strong>HTML5</strong> is the latest version of
+            <em>HyperText Markup Language</em>.
+          </p>
+          <p>
+            Visit the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >MDN Docs</a
+            >
+            for more info.
+          </p>
+
+          <h3>Features:</h3>
+          <ul>
+            <li>Semantic Elements</li>
+            <li>Multimedia Support</li>
+            <li>New Form Controls</li>
+          </ul>
+
+          <h3>Advantages:</h3>
+          <ol>
+            <li>Cleaner Code</li>
+            <li>Improved Accessibility</li>
+          </ol>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="form">
+          <h2>Contact Us</h2>
+          <form aria-label="Contact Form">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" required></textarea
+            ><br /><br />
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+
+      <div class="right-sidebar">
+        <!-- Multimedia Section -->
+        <section id="media">
+          <h2>Multimedia Demo</h2>
+
+          <h3>Audio:</h3>
+          <audio controls aria-label="Audio Sample">
+            <source src="audio.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <h3>Video:</h3>
+          <video width="320" height="240" controls aria-label="Video Sample">
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+      </div>
     </main>
+
+    <!-- Added Footer -->
+    <footer role="contentinfo">
+      <p>&copy; 2025 My Website | Made with ❤️ in HTML5</p>
+    </footer>
   </body>
 </html>
