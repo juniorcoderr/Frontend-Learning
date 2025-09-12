@@ -4,14 +4,16 @@ This is a simple responsive webpage with a **theme toggle** feature using only *
 
 ## ✅ Features
 
-- 🌞 Light Mode & 🌙 Dark Mode toggle using a checkbox
+- 🌞 Light Mode & 🌙 Dark Mode and 🖥️ System Theme Detection using pure CSS
 - Responsive layout with three sections:
   - Left Sidebar
   - Main Content
   - Right Sidebar
+- Automatically adapts to user's system theme preference using prefers-color-scheme
+- Manual override using radio buttons (Light / Dark / System)
+- Modern CSS (:has() selector) — no JS required
 - Google Fonts (Roboto)
 - CSS Variables for easy theme switching
-- Pure CSS solution using `:checked` pseudo-selector
 - Flexbox layout for desktop view, and column layout on mobile
 
 ## 📁 Project Structure
@@ -28,10 +30,11 @@ project-folder/
 
 ## 🧠 How It Works
 
-- A hidden `<input type="checkbox">` is used to toggle themes.
-- When checked, it activates dark mode by updating CSS variables.
-- CSS variables control background and text colors across the layout.
-- Layout is handled using `display: flex` and made responsive with media queries.
+- Three hidden `<input type="radio">` buttons are used for theme selection.
+- Labels act as clickable buttons to manually switch between Light, Dark, or System mode.
+- If "System" is selected, CSS uses the `@media (prefers-color-scheme: dark)` media query to detect the user's OS theme.
+- CSS Variables (`--header-bg`, `--text-color`, etc.) define all the theme colors.
+- Layout uses Flexbox for multi-column design and adapts with media queries for smaller screens.
 
 ## 📱 Responsive Design
 
