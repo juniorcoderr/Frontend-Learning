@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Handling Forms</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" id="name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("myForm"); // bring form element to JS
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // to avoid page reloading and stops sending data to server, with the help of this we can handle the event according to our use case
+        const name = document.getElementById("name").value; // pick up input box value
+        alert("Name entered: " + name);
+      });
+    </script>
+  </body>
+</html>
