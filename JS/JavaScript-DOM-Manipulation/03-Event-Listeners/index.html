@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavsScript Event Listeners</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        alert("Button clicked!");
+      });
+    </script>
+  </body>
+</html>
+
+| **Category**     | **Examples**                                       |
+| ---------------- | -------------------------------------------------- |
+| Mouse Events     | click, dblclick, mousemove, mouseenter, mouseleave |
+| Keyboard Events  | keydown, keyup, keypress                           |
+| Form Events      | submit, change, input, focus, blur                 |
+| Window Events    | load, resize, scroll, unload                       |
+| Touch Events     | touchstart, touchmove, touchend                    |
+| Clipboard Events | copy, cut, paste                                   |
