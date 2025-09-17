@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying DOM Elements</title>
+  </head>
+  <body>
+    <h1 id="heading" style="color: purple">Old Text</h1>
+    <script>
+      const h1 = document.getElementById("heading");
+      h1.textContent = "New Text"; // text change
+      h1.style.color = "red"; // color change
+    </script>
+  </body>
+</html>
