@@ -7,10 +7,37 @@
   </head>
   <body>
     <h1 id="heading" style="color: purple">Old Text</h1>
+    <div id="container">
+      <p>Old Paragraph</p>
+    </div>
+    <ul></ul>
     <script>
       const h1 = document.getElementById("heading");
+
+      // changing text content
       h1.textContent = "New Text"; // text change
+
+      // changing CSS styles
       h1.style.color = "red"; // color change
+
+      // changing HTML content
+      const div = document.querySelector("#container");
+      div.innerHTML = "<p>New paragraph</p>";
+
+      // modifying attributes - it will change src attribute of <img>
+      // const img = document.querySelector("img");
+      // img.setAttribute("src", "newimage.jpg");
+
+      // Adding/Removing Elements
+      const list = document.querySelector("ul");
+      const li = document.createElement("li");
+      li.textContent = "New Item";
+      list.appendChild(li);
+
+      // creating new elements
+      const newDiv = document.createElement("div");
+      newDiv.textContent = "I am new!";
+      document.body.appendChild(newDiv);
     </script>
   </body>
 </html>
