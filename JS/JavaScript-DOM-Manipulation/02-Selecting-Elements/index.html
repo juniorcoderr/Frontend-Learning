@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selecting Elements</title>
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ea
+      similique facere animi aliquid quibusdam necessitatibus delectus nobis
+      laborum expedita, amet dolore odio distinctio voluptas? Nihil sunt
+      deserunt ipsam minima?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, non cum
+      doloremque autem in ipsa deleniti veritatis sed odit, laborum assumenda,
+      culpa reprehenderit eius obcaecati exercitationem! Ipsum suscipit libero
+      voluptate! Tempora repellat necessitatibus fuga facilis esse perspiciatis,
+      repellendus dolorum unde illum, molestiae ad eligendi ea odit suscipit
+      quidem exercitationem consectetur saepe quam porro quisquam expedita
+      magnam. Veniam ducimus modi cumque?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente
+      fuga nihil voluptate doloremque, explicabo eos sit nobis eveniet facere
+      iste maiores dolorum ipsam sequi tempore earum, unde nam! Velit! Eum
+      repellendus natus unde ipsum maxime totam beatae dolores asperiores quia
+      molestiae quod quas doloribus, iste nihil placeat, ex a modi cum
+      distinctio ullam nam quidem et voluptatem eligendi! Eaque! Soluta totam in
+      non accusantium ex corrupti sequi laboriosam porro, cupiditate fugiat
+      delectus iure repellendus doloribus voluptates sapiente incidunt provident
+      commodi optio suscipit rerum. Doloribus temporibus tempora consectetur
+      quod repellat? Laboriosam error cum necessitatibus, ad et magnam officiis
+      nulla similique voluptates obcaecati dolorem cupiditate ex quas rerum
+      temporibus delectus expedita molestias quod vel maxime corrupti! Delectus,
+      eaque. Perspiciatis, dicta corporis!
+    </p>
+    <div>
+      <div>
+        <div></div>
+      </div>
+    </div>
+    <script>
+      // by id / Return type - Single Element because ID is unique
+      const h1 = document.getElementById("title");
+      console.log(h1);
+
+      // by class name / Return type - HTML Collection (can contain multiple elements)
+      const p = document.getElementsByClassName("para");
+      console.log(p);
+
+      // by tag name / Return type - HTML Collection
+      const allDivs = document.getElementsByTagName("div");
+      console.log(allDivs);
+
+      // by CSS Selector (single) / Return type - first match
+      const firstPara = document.querySelector(".para");
+      console.log(firstPara);
+
+      // by CSS Selector (multiple) / Return type - NodeList (all match)
+      const allParas = document.querySelectorAll(".para");
+      console.log(allParas);
+
+      // by name attribute (Special methods for Form Elements) / Return type - NodeList / form fields by name
+      //   const inputs = document.getElementsByName('username');
+
+      console.log(h1.textContent); // Hello
+    </script>
+  </body>
+</html>
