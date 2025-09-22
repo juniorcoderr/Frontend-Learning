@@ -1,0 +1,12 @@
+### 🔹 Real-Life Use Cases of Headers
+
+| Use Case                                    | Header Example                                         | Purpose                                               |
+| ------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| **1. Data ka format batana (Content-Type)** | `Content-Type: application/json`                       | Server ko batana ki request body JSON hai             |
+| **2. Authorization / Authentication**       | `Authorization: Bearer <token>`                        | Secure API call karne ke liye token bhejna            |
+| **3. Caching Control**                      | `Cache-Control: no-cache`                              | Browser ko batana ki page cache na kare               |
+| **4. Language Preference**                  | `Accept-Language: en-US`                               | Server ko batana ki response English mein chahiye     |
+| **5. Custom Headers (extra info bhejna)**   | `X-Custom-Header: myValue`                             | Apne custom data ko server tak bhejna                 |
+| **6. Cookies/Session manage karna**         | `Set-Cookie: sessionId=abc123`                         | Server client ke browser mein session store karta hai |
+| **7. Security ke liye**                     | `X-Frame-Options: DENY`                                | Clickjacking attack se bachne ke liye                 |
+| **8. File Download Type**                   | `Content-Disposition: attachment; filename="file.pdf"` | Browser ko batana ki file download ho aur naam kya ho |
