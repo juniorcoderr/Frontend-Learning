@@ -1,3 +1,6 @@
+.desktop-menu {
+  display: none; /* hide menu on mobile */
+}
 /* General body styles */
 body {
   margin: 0;
@@ -120,4 +123,95 @@ body {
   position: absolute;
   top: -5px;
   right: -8px;
+}
+
+/* Main content container */
+.main-content {
+  padding: 15px;
+  background-color: #f0f0f0; /* different color from page background*/
+}
+
+/* Comman styles for both banners */
+.promo-banner {
+  width: 100%;
+  min-height: 160px; /* Increased height for better visuals */
+  border-radius: 16px; /* Smoother corners */
+  margin-bottom: 24px; /* More space between banners */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 32px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Banner 1 (Galaxy) */
+#galaxy-banner {
+  background-image: url("images/galaxy-banner.jpg");
+  justify-content: flex-end;
+  text-align: right;
+  background-blend-mode: darken;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Slight overlay for text readability */
+}
+
+/* Banner 2 (Surface Pro) */
+#surface-banner {
+  background-image: url("images/surface-pro-banner.jpg");
+  background-color: #0078d4;
+  justify-content: flex-start;
+  background-blend-mode: darken;
+  background-color: rgba(0, 120, 212, 0.4); /* Slight blue overlay */
+}
+
+/* Banner text styling */
+.banner-text-right,
+.banner-text-left {
+  background: rgba(0, 0, 0, 0.35); /* Semi-transparent background for text */
+  padding: 18px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.promo-banner h2 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.promo-banner p {
+  margin: 5px 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.shop-now-btn {
+  background-color: #ffd700;
+  color: #333;
+  padding: 7px 22px;
+  text-decoration: none;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s;
+}
+.shop-now-btn:hover {
+  background-color: #ffe066;
+}
+.chip {
+  background-color: #ffd700;
+  color: #333;
+  padding: 4px 16px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
 }
