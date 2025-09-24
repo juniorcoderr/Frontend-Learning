@@ -1,0 +1,123 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* light grey background of the background*/
+}
+
+/* Header main container */
+.header {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /*  Stack Items above each other */
+  align-items: center; /* center everything */
+  gap: 15px; /* Vertical space between items */
+}
+
+/* Logo styling */
+.logo-container h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.logo-container span {
+  background-color: #ffd700; /* Yellow background */
+  padding: 0 5px;
+  border-radius: 50%;
+}
+
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Search bar container */
+.search-container {
+  display: flex; /* important: bring items side by side */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* rounded corners */
+  width: 100%;
+}
+
+.search-container input,
+.search-container select {
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+.search-container input {
+  flex-grow: 1; /* input field can takes all the remaining space */
+}
+.search-container select {
+  border-left: 1px solid #ccc;
+}
+.search-button {
+  border: none;
+  background-color: #ffd700; /* Yellow button */
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* Free Shipping banner */
+.shipping-banner p {
+  margin: 0;
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+  background-color: #ffd700; /* Main yellow color */
+  padding: 10px 15px;
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Send Items to both corners */
+  align-items: center; /* Vertically center */
+}
+
+/* User actions (profile + cart) together */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between icons */
+}
+
+/* nav icons common style */
+.nav-icon {
+  background: none;
+  border: none;
+  font-size: 24px; /* Icon size */
+  cursor: pointer;
+  color: #333; /* Icon color little dark */
+  position: relative; /* important for cart count */
+  padding: 0;
+}
+
+/* specific style for cart icon and count  */
+.cart-btn {
+  display: flex; /* bring cart icon and count together */
+  align-items: center;
+}
+
+.cart-count {
+  background-color: #333;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%; /* circle */
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Positioning magic: top on the icon */
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
