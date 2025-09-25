@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags & viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title -->
+    <title>ShopHub - Homepage</title>
+
+    <!-- Google Fonts preconnect & font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- External JS file -->
+    <script src="script.js"></script>
+
+    <!-- Top bar for promotions -->
+    <div class="top-bar">
+      <p>🏷️ Hurry, Get big discounts on every weekend!</p>
+    </div>
+
+    <!-- Header section -->
+    <header class="header">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="images/logo.png" alt="ShopHub Logo" />
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search here..."
+            aria-label="Search products"
+          />
+          <select aria-label="Select category">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Groceries</option>
+            <option>Lifestyle</option>
+            <option>Fashion</option>
+          </select>
+          <button aria-label="Search">🔍</button>
+        </div>
+
+        <!-- Header info (like shipping info) -->
+        <div class="header-info">
+          <span>🚚 Free Shipping</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav class="main-nav">
+      <div class="nav-content">
+        <!-- Mobile menu button -->
+        <div class="nav-left">
+          <button
+            id="mobile-menu-btn"
+            class="mobile-menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <!-- Center nav links -->
+        <div id="nav-menu" class="nav-center">
+          <ul>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Contact US</a></li>
+            <li><a href="#" class="nav-item">Vouchers</a></li>
+            <li><a href="#" class="nav-item">Exclusive Offers</a></li>
+            <li><a href="#" class="nav-item">More</a></li>
+          </ul>
+        </div>
+
+        <!-- Right icons: user & cart -->
+        <div class="nav-right">
+          <div class="nav-icon user-icon" aria-label="User account">👤</div>
+          <div class="nav-icon cart-icon" aria-label="Shopping cart">🛒</div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="container">
+      <!-- Left sidebar -->
+      <aside class="sidebar-left">
+        <!-- Categories widget -->
+        <div class="category-widget widget">
+          <h3>Categories</h3>
+          <ul>
+            <li class="active"><a href="#">Laptops</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#">PC</a></li>
+            <li><a href="#">Lights</a></li>
+            <li><a href="#">Camera</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Television</a></li>
+          </ul>
+        </div>
+
+        <!-- New arrival widget -->
+        <div class="new-arrival-widget widget">
+          <h3>New Arrival</h3>
+          <img
+            src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=400&auto=format&fit=crop"
+            alt="New Arrival Product"
+          />
+          <div>
+            <span>Samsung Galaxy S25 Ultra</span>
+          </div>
+          <div class="price">
+            <span class="old-price">₹95,000</span>
+            <span class="new-price">₹75,000</span>
+          </div>
+          <button class="btn-add">ADD TO CART</button>
+        </div>
+      </aside>
+
+      <!-- Center content -->
+      <div class="center-content">
+        <!-- Banner section -->
+        <section class="product-banner">
+          <div class="banner-content">
+            <h2>HP Pavilion 15</h2>
+            <div class="banner-price">
+              ₹2,000 <span class="old-price">₹4,000</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Top products heading -->
+        <span><strong class="top-heading">Our Top Products!!</strong></span>
+
+        <!-- Product grid -->
+        <section class="product-grid">
+          <!-- Single product card example -->
+          <div class="product-card">
+            <!-- Product image -->
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 1"
+            />
+            <!-- Product name & specs -->
+            <div>
+              <span><strong>HP Pavilion 15</strong></span
+              ><br />
+              <span
+                >Intel Core i5 12th Gen | 8GB RAM | 512GB SSD | 15.6" FHD
+                Display | Windows 11</span
+              >
+            </div>
+            <!-- Price & add button -->
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹4,000</span>
+                <span class="new-price">₹2,000</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 2"
+            />
+            <div>
+              <span><strong>Dell Inspiron 14</strong></span
+              ><br />
+              <span
+                >AMD Ryzen 5 5500U | 16GB RAM | 512GB SSD | 14" Full HD |
+                Windows 11</span
+              >
+            </div>
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹35,000</span>
+                <span class="new-price">₹18,000</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 3"
+            />
+            <div>
+              <span><strong>Lenovo IdeaPad Slim 3</strong></span
+              ><br />
+              <span
+                >Intel Core i3 11th Gen | 8GB RAM | 256GB SSD | 15.6" FHD
+                Display | Windows 11</span
+              >
+            </div>
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹50,000</span>
+                <span class="new-price">₹25,000</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1504707748692-419802cf939d?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 4"
+            />
+            <div>
+              <span><strong>Asus VivoBook 15</strong></span
+              ><br />
+              <span
+                >AMD Ryzen 7 5700U | 16GB RAM | 512GB SSD | 15.6" FHD Display |
+                Windows 11</span
+              >
+            </div>
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹60,000</span>
+                <span class="new-price">₹30,000</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 5"
+            />
+            <div>
+              <span><strong>Acer Aspire 7</strong></span
+              ><br />
+              <span
+                >Intel Core i5 12th Gen | 16GB RAM | 512GB SSD | NVIDIA GTX 1650
+                | 15.6" FHD</span
+              >
+            </div>
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹45,000</span>
+                <span class="new-price">₹21,000</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=400&auto=format&fit=crop"
+              alt="Laptop Product 6"
+            />
+            <div>
+              <span><strong>MSI Modern 14</strong></span
+              ><br />
+              <span
+                >Intel Core i7 11th Gen | 8GB RAM | 512GB SSD | 14" Full HD |
+                Windows 11</span
+              >
+            </div>
+            <div class="product-info">
+              <div class="price">
+                <span class="old-price">₹7,000</span>
+                <span class="new-price">₹3,500</span>
+              </div>
+              <button class="btn-add">ADD</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right sidebar -->
+      <aside class="sidebar-right">
+        <!-- Sale widget -->
+        <div class="sale-widget">
+          <span class="sale-tag">sale</span>
+          <img
+            src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=400&auto=format&fit=crop"
+            alt="Sale Item 1"
+          />
+          <div>
+            <span><strong>Apple MacBook Air M1</strong></span
+            ><br />
+            <span
+              >Apple M1 Chip | 8GB Unified Memory | 256GB SSD | 13.3" Retina
+              Display | macOS</span
+            >
+          </div>
+          <div class="sale-info">
+            <div class="price">
+              <span class="old-price">₹4,500</span>
+              <span class="new-price">₹2,100</span>
+            </div>
+            <button class="btn-add">ADD</button>
+          </div>
+        </div>
+
+        <!-- Another sale widget -->
+        <div class="sale-widget">
+          <span class="sale-tag">sale</span>
+          <img
+            src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?q=80&w=400&auto=format&fit=crop"
+            alt="Sale Item 2"
+          />
+          <div>
+            <span><strong>Apple MacBook Air M1</strong></span
+            ><br />
+            <span
+              >Apple M1 Chip | 8GB Unified Memory | 256GB SSD | 13.3" Retina
+              Display | macOS</span
+            >
+          </div>
+          <div class="sale-info">
+            <div class="price">
+              <span class="old-price">₹7,800</span>
+              <span class="new-price">₹3,500</span>
+            </div>
+            <button class="btn-add">ADD</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
