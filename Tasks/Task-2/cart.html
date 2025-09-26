@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata (character encoding & viewport settings) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title shown in browser tab -->
+    <title>My Cart</title>
+
+    <!-- Google Fonts: Roboto font styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS file for cart page styling -->
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body>
+    <!-- Main container for cart page -->
+    <div class="cart-container">
+      <!-- Cart header section: Title + Delete button -->
+      <div class="cart-header">
+        <h1>My Cart</h1>
+        <button class="delete-btn">Delete</button>
+      </div>
+
+      <!-- Select All checkbox section -->
+      <div class="select-all">
+        <input type="checkbox" id="selectAllItems" />
+        <label for="selectAllItems">Select All</label>
+      </div>
+
+      <!-- List of all cart items -->
+      <div class="cart-items-list">
+        <!-- Single cart item (Samsung S24 Ultra) -->
+        <div class="cart-item">
+          <!-- Checkbox to select this particular item -->
+          <input type="checkbox" class="cart-item-checkbox" checked />
+
+          <!-- Product image -->
+          <img
+            src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=400&auto=format&fit=crop"
+            alt="Samsung S24 Ultra"
+            class="cart-item-image"
+          />
+
+          <!-- Product details: name, type, price -->
+          <div class="cart-item-details">
+            <h3>samsung s24 ultra</h3>
+            <p>Type: Smartphone: Black</p>
+
+            <!-- Price section: current & original price -->
+            <div class="cart-item-price">
+              <span class="current-price">₹60000</span>
+              <span class="original-price">₹90000</span>
+            </div>
+          </div>
+
+          <!-- Quantity control: decrease/increase quantity -->
+          <div class="quantity-control">
+            <button>-</button>
+            <input type="number" value="1" min="1" />
+            <button>+</button>
+          </div>
+        </div>
+
+        <!-- Another cart item (DELL Laptop) -->
+        <div class="cart-item">
+          <!-- Checkbox to select this particular item -->
+          <input type="checkbox" class="cart-item-checkbox" />
+
+          <!-- Product image -->
+          <img
+            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=400&auto=format&fit=crop"
+            alt="Samsung S24 Ultra"
+            class="cart-item-image"
+          />
+
+          <!-- Product details: name, type, price -->
+          <div class="cart-item-details">
+            <h3>DELL Laptop</h3>
+            <p>Type: laptop Color: Blue</p>
+
+            <!-- Price section: current & original price -->
+            <div class="cart-item-price">
+              <span class="current-price">₹35000</span>
+              <span class="original-price">₹180000</span>
+            </div>
+          </div>
+
+          <!-- Quantity control: decrease/increase quantity -->
+          <div class="quantity-control">
+            <button>-</button>
+            <input type="number" value="1" min="1" />
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+      <!-- End of cart-items-list -->
+    </div>
+    <!-- End of cart-container -->
+  </body>
+</html>
