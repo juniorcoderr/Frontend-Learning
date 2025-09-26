@@ -32,6 +32,8 @@
 /* ============================ */
 /* RESET & BASE STYLES          */
 /* ============================ */
+
+/* Consistent spacing */
 * {
   box-sizing: border-box;
   margin: 0;
