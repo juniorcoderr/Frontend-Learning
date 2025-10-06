@@ -8,9 +8,13 @@
 // import Lists from "./components/05-Lists/Lists";
 // import UserList from "./components/05-Lists/UserList";
 // import ProductList from "./components/05-Lists/ProductList";
-import Card from "./components/06-Props/Card";
-import Person from "./components/06-Props/Person";
-import Product from "./components/06-Props/Product";
+// import Card from "./components/06-Props/Card";
+// import Person from "./components/06-Props/Person";
+// import Product from "./components/06-Props/Product";
+
+import Greeting from "./components/07-Conditional-Rendering/Greeting";
+import UserStatus from "./components/07-Conditional-Rendering/UserStatus";
+import Weather from "./components/07-Conditional-Rendering/Weather";
 
 const App = () => {
   return (
@@ -35,7 +39,7 @@ const App = () => {
       <UserList />
       <ProductList /> */}
 
-      {/* 06 - Implement the Props Examples */}
+      {/* 06 - Implement the Props Examples 
       <Person name="Vinayak" age={22} />
       <Product name="Laptop" price={1000} />
       <Card>
@@ -45,7 +49,12 @@ const App = () => {
       <Card>
         <h1>My Card 2</h1>
         <p>Card Content 2</p>
-      </Card>
+      </Card> */}
+
+      {/* 07 - Implement the examples for the Conditional Rendering */}
+      <Weather temperature={18} />
+      <UserStatus loggedIn={true} isAdmin={false} />
+      <Greeting timeOfDay="afternoon" />
     </div>
   );
 };
