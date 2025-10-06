@@ -1,13 +1,16 @@
-// import Greet from "./components/Greet";
-// import Header from "./components/Header";
-// import MainContent from "./components/MainContent";
-// import Footer from "./components/Footer";
-// import JSXRules from "./components/JSXRules";
-// import Greeting from "./components/Greeting";
-// import ProductInfo from "./components/ProductInfo";
-import Lists from "./components/Lists";
-import UserList from "./components/UserList";
-import ProductList from "./components/ProductList";
+// import Greet from "./components/01-Components-Types/Greet";
+// import Header from "./components/02-Components-Example/Header";
+// import MainContent from "./components/02-Components-Example/MainContent";
+// import Footer from "./components/02-Components-Example/Footer";
+// import JSXRules from "./components/03-JSX-Rules/JSXRules";
+// import Greeting from "./components/04-JSX-Expressions/Greeting";
+// import ProductInfo from "./components/04-JSX-Expressions/ProductInfo";
+// import Lists from "./components/05-Lists/Lists";
+// import UserList from "./components/05-Lists/UserList";
+// import ProductList from "./components/05-Lists/ProductList";
+import Card from "./components/06-Props/Card";
+import Person from "./components/06-Props/Person";
+import Product from "./components/06-Props/Product";
 
 const App = () => {
   return (
@@ -27,10 +30,22 @@ const App = () => {
       <Greeting />
       <ProductInfo /> */}
 
-      {/* 05 - Implement the examples for the Lists in ReactJS */}
+      {/* 05 - Implement the examples for the Lists in ReactJS 
       <Lists />
       <UserList />
-      <ProductList />
+      <ProductList /> */}
+
+      {/* 06 - Implement the Props Examples */}
+      <Person name="Vinayak" age={22} />
+      <Product name="Laptop" price={1000} />
+      <Card>
+        <h1>My Card 1</h1>
+        <p>Card Content 1</p>
+      </Card>
+      <Card>
+        <h1>My Card 2</h1>
+        <p>Card Content 2</p>
+      </Card>
     </div>
   );
 };
