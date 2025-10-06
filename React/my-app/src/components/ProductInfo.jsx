@@ -11,7 +11,7 @@ const ProductInfo = () => {
     <div>
       <p>Name: {productDetails.name}</p>
       <p>Price: ${productDetails.price}</p>
-      <p>Availability: ${productDetails.availability}</p>
+      <p>Availability: {productDetails.availability}</p>
     </div>
   );
 };
