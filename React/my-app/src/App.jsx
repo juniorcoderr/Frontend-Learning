@@ -11,10 +11,12 @@
 // import Card from "./components/06-Props/Card";
 // import Person from "./components/06-Props/Person";
 // import Product from "./components/06-Props/Product";
+// import Greeting from "./components/07-Conditional-Rendering/Greeting";
+// import UserStatus from "./components/07-Conditional-Rendering/UserStatus";
+// import Weather from "./components/07-Conditional-Rendering/Weather";
 
-import Greeting from "./components/07-Conditional-Rendering/Greeting";
-import UserStatus from "./components/07-Conditional-Rendering/UserStatus";
-import Weather from "./components/07-Conditional-Rendering/Weather";
+import Style from "./components/08-Styling/01-Inline-Style/style";
+import StyleOne from "./components/08-Styling/02-Dynamic-Style/StyleOne";
 
 const App = () => {
   return (
@@ -51,10 +53,14 @@ const App = () => {
         <p>Card Content 2</p>
       </Card> */}
 
-      {/* 07 - Implement the examples for the Conditional Rendering */}
+      {/* 07 - Implement the examples for the Conditional Rendering 
       <Weather temperature={18} />
       <UserStatus loggedIn={true} isAdmin={false} />
-      <Greeting timeOfDay="afternoon" />
+      <Greeting timeOfDay="afternoon" /> */}
+
+      {/* 08 - Implement the two methods for styling in ReactJS -> 1) Inline Style & 2) Dynamic Styling */}
+      <Style />
+      <StyleOne />
     </div>
   );
 };
