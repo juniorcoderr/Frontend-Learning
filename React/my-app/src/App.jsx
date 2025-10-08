@@ -16,10 +16,14 @@
 // import Weather from "./components/07-Conditional-Rendering/Weather";
 // import Style from "./components/08-Styling/01-Inline-Style/style";
 // import StyleOne from "./components/08-Styling/02-Dynamic-Style/StyleOne";
+// import Button from "./components/09-Adding-Events/Button";
+// import Copy from "./components/09-Adding-Events/Copy";
+// import Move from "./components/09-Adding-Events/Move";
 
-import Button from "./components/09-Adding-Events/Button";
-import Copy from "./components/09-Adding-Events/Copy";
-import Move from "./components/09-Adding-Events/Move";
+import Counter from "./components/10-Hooks/01-useState/Counter";
+import Profile from "./components/10-Hooks/01-useState/Profile";
+import ShoppingList from "./components/10-Hooks/01-useState/ShoppingList";
+import TodoList from "./components/10-Hooks/01-useState/TodoList";
 
 const App = () => {
   return (
@@ -65,10 +69,15 @@ const App = () => {
       <Style />
       <StyleOne /> */}
 
-      {/* 09 - Adding Events to elements */}
+      {/* 09 - Adding Events to elements 
       <Button />
       <Copy />
-      <Move />
+      <Move /> */}
+
+      <Counter />
+      <TodoList />
+      <Profile />
+      <ShoppingList />
     </div>
   );
 };
