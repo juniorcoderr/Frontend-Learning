@@ -14,9 +14,12 @@
 // import Greeting from "./components/07-Conditional-Rendering/Greeting";
 // import UserStatus from "./components/07-Conditional-Rendering/UserStatus";
 // import Weather from "./components/07-Conditional-Rendering/Weather";
+// import Style from "./components/08-Styling/01-Inline-Style/style";
+// import StyleOne from "./components/08-Styling/02-Dynamic-Style/StyleOne";
 
-import Style from "./components/08-Styling/01-Inline-Style/style";
-import StyleOne from "./components/08-Styling/02-Dynamic-Style/StyleOne";
+import Button from "./components/09-Adding-Events/Button";
+import Copy from "./components/09-Adding-Events/Copy";
+import Move from "./components/09-Adding-Events/Move";
 
 const App = () => {
   return (
@@ -58,9 +61,14 @@ const App = () => {
       <UserStatus loggedIn={true} isAdmin={false} />
       <Greeting timeOfDay="afternoon" /> */}
 
-      {/* 08 - Implement the two methods for styling in ReactJS -> 1) Inline Style & 2) Dynamic Styling */}
+      {/* 08 - Implement the two methods for styling in ReactJS -> 1) Inline Style & 2) Dynamic Styling 
       <Style />
-      <StyleOne />
+      <StyleOne /> */}
+
+      {/* 09 - Adding Events to elements */}
+      <Button />
+      <Copy />
+      <Move />
     </div>
   );
 };
