@@ -23,11 +23,16 @@
 // import Profile from "./components/10-Hooks/01-useState/Profile";
 // import ShoppingList from "./components/10-Hooks/01-useState/ShoppingList";
 // import TodoList from "./components/10-Hooks/01-useState/TodoList";
+// import Basics from "./components/10-Hooks/02-useEffect/Basics";
+// import BasicEffect from "./components/10-Hooks/02-useEffect/BasicEffect";
+// import CounterEffect from "./components/10-Hooks/02-useEffect/CounterEffect";
+// import FetchDataEffect from "./components/10-Hooks/02-useEffect/FetchDataEffect";
+// import ComponentA from "./components/11-Prop-Drilling/01-Problem/ComponentA";
+// import ComponentB from "./components/11-Prop-Drilling/01-Problem/ComponentB";
+// import ComponentC from "./components/11-Prop-Drilling/01-Problem/ComponentC";
+// import ComponentD from "./components/11-Prop-Drilling/01-Problem/ComponentD";
 
-import Basics from "./components/10-Hooks/02-useEffect/Basics";
-import BasicEffect from "./components/10-Hooks/02-useEffect/BasicEffect";
-import CounterEffect from "./components/10-Hooks/02-useEffect/CounterEffect";
-import FetchDataEffect from "./components/10-Hooks/02-useEffect/FetchDataEffect";
+import ComponentA from "./components/11-Prop-Drilling/02-Solution/ContextAPI/ComponentA";
 
 const App = () => {
   return (
@@ -84,11 +89,21 @@ const App = () => {
       <Profile />
       <ShoppingList /> */}
 
-      {/* 11 - useEffect Examples */}
+      {/* 11 - useEffect Examples 
       <Basics />
       <BasicEffect />
       <CounterEffect />
-      <FetchDataEffect />
+      <FetchDataEffect /> */}
+
+      {/* 12 - Prop Drilling 
+      ---Problem---
+      <ComponentA />
+      <ComponentB />
+      <ComponentC />
+      <ComponentD />
+      
+      ---Solution---*/}
+      <ComponentA />
     </div>
   );
 };
