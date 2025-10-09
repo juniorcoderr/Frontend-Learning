@@ -31,8 +31,9 @@
 // import ComponentB from "./components/11-Prop-Drilling/01-Problem/ComponentB";
 // import ComponentC from "./components/11-Prop-Drilling/01-Problem/ComponentC";
 // import ComponentD from "./components/11-Prop-Drilling/01-Problem/ComponentD";
+// import ComponentA from "./components/11-Prop-Drilling/02-Solution/ContextAPI/ComponentA";
 
-import ComponentA from "./components/11-Prop-Drilling/02-Solution/ContextAPI/ComponentA";
+import ComponentA from "./components/10-Hooks/03-useContext/ComponentA";
 
 const App = () => {
   return (
@@ -102,7 +103,10 @@ const App = () => {
       <ComponentC />
       <ComponentD />
       
-      ---Solution---*/}
+      ---Solution using ContextAPI---
+      <ComponentA /> 
+      
+      ---Solution using useContext() hook */}
       <ComponentA />
     </div>
   );
