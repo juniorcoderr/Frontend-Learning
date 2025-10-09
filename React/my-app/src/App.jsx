@@ -19,11 +19,15 @@
 // import Button from "./components/09-Adding-Events/Button";
 // import Copy from "./components/09-Adding-Events/Copy";
 // import Move from "./components/09-Adding-Events/Move";
+// import Counter from "./components/10-Hooks/01-useState/Counter";
+// import Profile from "./components/10-Hooks/01-useState/Profile";
+// import ShoppingList from "./components/10-Hooks/01-useState/ShoppingList";
+// import TodoList from "./components/10-Hooks/01-useState/TodoList";
 
-import Counter from "./components/10-Hooks/01-useState/Counter";
-import Profile from "./components/10-Hooks/01-useState/Profile";
-import ShoppingList from "./components/10-Hooks/01-useState/ShoppingList";
-import TodoList from "./components/10-Hooks/01-useState/TodoList";
+import Basics from "./components/10-Hooks/02-useEffect/Basics";
+import BasicEffect from "./components/10-Hooks/02-useEffect/BasicEffect";
+import CounterEffect from "./components/10-Hooks/02-useEffect/CounterEffect";
+import FetchDataEffect from "./components/10-Hooks/02-useEffect/FetchDataEffect";
 
 const App = () => {
   return (
@@ -74,10 +78,17 @@ const App = () => {
       <Copy />
       <Move /> */}
 
+      {/* 10 - useState examples
       <Counter />
       <TodoList />
       <Profile />
-      <ShoppingList />
+      <ShoppingList /> */}
+
+      {/* 11 - useEffect Examples */}
+      <Basics />
+      <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect />
     </div>
   );
 };
