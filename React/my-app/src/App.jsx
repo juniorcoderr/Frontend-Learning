@@ -33,8 +33,10 @@
 // import ComponentD from "./components/11-Prop-Drilling/01-Problem/ComponentD";
 // import ComponentA from "./components/11-Prop-Drilling/02-Solution/ContextAPI/ComponentA";
 // import ComponentA from "./components/10-Hooks/03-useContext/ComponentA";
+// import CounterExample from "./components/10-Hooks/04-useReducer/CounterExample";
 
-import CounterExample from "./components/10-Hooks/04-useReducer/CounterExample";
+import FocusInput from "./components/10-Hooks/05-useRef/FocusInput";
+import Timer from "./components/10-Hooks/05-useRef/Timer";
 
 const App = () => {
   return (
@@ -110,8 +112,12 @@ const App = () => {
       ---Solution using useContext() hook 
       <ComponentA /> */}
 
-      {/* 13 - useReducer hook */}
-      <CounterExample />
+      {/* 13 - useReducer hook 
+      <CounterExample /> */}
+
+      {/* 14 - useRef hook */}
+      <FocusInput />
+      <Timer />
     </div>
   );
 };
