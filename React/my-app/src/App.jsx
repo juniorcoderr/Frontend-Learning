@@ -38,8 +38,7 @@
 // import Timer from "./components/10-Hooks/05-useRef/Timer";
 // import Problem from "./components/12-Custom-Hooks/01-Problem/Problem";
 // import Solution from "./components/12-Custom-Hooks/02-Solution/Solution";
-
-import UniqueID from "./components/10-Hooks/06-useId/UniqueID";
+// import UniqueID from "./components/10-Hooks/06-useId/UniqueID";
 
 const App = () => {
   return (
@@ -126,8 +125,8 @@ const App = () => {
       <Problem /> 
       <Solution /> */}
 
-      {/* 16 - useId hook */}
-      <UniqueID />
+      {/* 16 - useId hook 
+      <UniqueID /> */}
     </div>
   );
 };
