@@ -6,6 +6,7 @@ import { createContext } from "react";
 import ComponentB from "./ComponentB";
 
 // second create the instance
+// to resolve this issue create a seperate file for the context and then import them here in the parent component
 export const DataOne = createContext();
 export const DataTwo = createContext();
 
