@@ -32,8 +32,9 @@
 // import ComponentC from "./components/11-Prop-Drilling/01-Problem/ComponentC";
 // import ComponentD from "./components/11-Prop-Drilling/01-Problem/ComponentD";
 // import ComponentA from "./components/11-Prop-Drilling/02-Solution/ContextAPI/ComponentA";
+// import ComponentA from "./components/10-Hooks/03-useContext/ComponentA";
 
-import ComponentA from "./components/10-Hooks/03-useContext/ComponentA";
+import CounterExample from "./components/10-Hooks/04-useReducer/CounterExample";
 
 const App = () => {
   return (
@@ -106,8 +107,11 @@ const App = () => {
       ---Solution using ContextAPI---
       <ComponentA /> 
       
-      ---Solution using useContext() hook */}
-      <ComponentA />
+      ---Solution using useContext() hook 
+      <ComponentA /> */}
+
+      {/* 13 - useReducer hook */}
+      <CounterExample />
     </div>
   );
 };
