@@ -8,7 +8,7 @@
 // import Accordion from "./07-Accordions/Accordion";
 // import { accordionData } from "./07-Accordions/utils/content";
 
-import Form from "./08-Form-Validation/Form";
+// import Form from "./08-Form-Validation/Form";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
         ))}
       </div> */}
 
-      <Form />
+      {/* <Form /> */}
     </div>
   );
 };
