@@ -1,16 +1,31 @@
-# React + Vite
+### 🧠 **React Mini Projects Collection**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of beginner-to-intermediate level React mini projects built to strengthen core concepts like **state management**, **event handling**, **conditional rendering**, **API integration**, and **form validation**.
+Each project focuses on one specific concept, making this repository a great reference for learning React fundamentals through practical implementation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 **Projects Included**
 
-## React Compiler
+1. 📝 **Todo App** – A simple task management app to add and remove todos using React’s `useState`.
+2. 🍤 **Meals API** – Fetches and displays meal data from an external API using **Axios** and **useEffect**.
+3. 🧮 **Calculator** – A basic calculator performing arithmetic operations with dynamic input handling.
+4. 🎨 **Toggle Background Color** – Switch between light and dark themes using state-based background and text color updates.
+5. 🔍 **Hidden Search Bar** – A minimalist search bar that expands when the search icon is clicked, using conditional rendering.
+6. 💬 **Testimonials Slider** – A testimonial component allowing users to navigate between multiple reviews.
+7. 📂 **Accordion** – Expandable and collapsible sections to display hidden content, built using `useState`.
+8. 🧾 **Form Validation** – A registration form with live validation for username, email, password, and confirm password fields.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🧩 **Tech Stack**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚛️ React.js (Functional Components + Hooks)
+* 🎨 CSS3 for styling
+* 🌐 Axios for API fetching
+
+---
+
+### 🎯 **Purpose**
+
+This repository demonstrates how small, focused projects can effectively teach different parts of the React ecosystem. Perfect for beginners looking to build confidence and understanding of **React hooks** and **component-based architecture**.
