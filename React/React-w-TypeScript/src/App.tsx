@@ -1,3 +1,9 @@
+import User from "./components/01-Components-Props/User";
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <User />
+    </div>
+  );
 };
