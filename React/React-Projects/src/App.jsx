@@ -5,8 +5,10 @@
 // import HiddenSearchBar from "./05-HiddenSearchBar/HiddenSearchBar";
 // import Testimonials from "./06-Testimonials/Testimonials";
 
-import Accordion from "./07-Accordions/Accordion";
-import { accordionData } from "./07-Accordions/utils/content";
+// import Accordion from "./07-Accordions/Accordion";
+// import { accordionData } from "./07-Accordions/utils/content";
+
+import Form from "./08-Form-Validation/Form";
 
 const App = () => {
   return (
@@ -17,11 +19,14 @@ const App = () => {
       {/* <ToggleBackgroundColor /> */}
       {/* <HiddenSearchBar /> */}
       {/* <Testimonials /> */}
-      <div>
+
+      {/* <div>
         {accordionData.map(({ title, content }) => (
           <Accordion title={title} content={content} />
         ))}
-      </div>
+      </div> */}
+
+      <Form />
     </div>
   );
 };
