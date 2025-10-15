@@ -2,8 +2,9 @@
 // import Counter from "./components/02-useState-TypeScript/Counter";
 // import UserProfile from "./components/02-useState-TypeScript/UserProfile";
 // import Form from "./components/03-useRef-Forms-Events/Form";
+// import Counter from "./components/04-ContextAPI/Counter";
 
-import Counter from "./components/04-ContextAPI/Counter";
+import Counter from "./components/05-useReducer-TypeScript/Counter";
 
 export const App = () => {
   return (
@@ -18,7 +19,10 @@ export const App = () => {
        03 - useRef, Forms, Events in TypeScript 
       <Form /> 
 
-      04 - ContextAPI in ReactJS using TypeScript */}
+      04 - ContextAPI in ReactJS using TypeScript 
+      <Counter /> 
+
+      05 - useReducer hook with TypeScript */}
       <Counter />
     </div>
   );
