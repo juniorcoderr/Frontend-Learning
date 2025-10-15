@@ -1,7 +1,6 @@
 // import User from "./components/01-Components-Props/User";
-
-import Counter from "./components/02-useState-TypeScript/Counter";
-import UserProfile from "./components/02-useState-TypeScript/UserProfile";
+// import Counter from "./components/02-useState-TypeScript/Counter";
+// import UserProfile from "./components/02-useState-TypeScript/UserProfile";
 
 export const App = () => {
   return (
@@ -9,9 +8,9 @@ export const App = () => {
       {/* 01 - Module 
       {/* <User /> */}
 
-      {/* 02 - useState hook with TypeScript */}
+      {/* 02 - useState hook with TypeScript 
       <Counter />
-      <UserProfile />
+      <UserProfile /> */}
     </div>
   );
 };
