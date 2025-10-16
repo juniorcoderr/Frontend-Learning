@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+// This is a TypeScript type alias —
+// we’ve created a Product type that defines the exact structure of the data coming from the API.
+// This helps TypeScript understand what fields are present in the data and what their respective data types are.
+
 type Product = {
   id: number;
   title: string;
@@ -16,6 +20,10 @@ type Product = {
 
 const MyComponent = () => {
   // State with type annotation
+  // Here, we’ve created a state variable named data.
+  // Its type is Product | null, which means it can either hold a `Product` object or `null`.
+  // Initially, it’s set to `null` because there’s no data available before the API call completes.
+
   const [data, setData] = useState<Product | null>(null);
 
   useEffect(() => {

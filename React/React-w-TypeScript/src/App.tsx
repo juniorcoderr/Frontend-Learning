@@ -4,8 +4,7 @@
 // import Form from "./components/03-useRef-Forms-Events/Form";
 // import Counter from "./components/04-ContextAPI/Counter";
 // import Counter from "./components/05-useReducer-TypeScript/Counter";
-
-import Example from "./components/06-useEffect-TypeScript/Example";
+// import Example from "./components/06-useEffect-TypeScript/Example";
 
 export const App = () => {
   return (
@@ -26,8 +25,8 @@ export const App = () => {
       05 - useReducer hook with TypeScript 
       <Counter /> 
 
-      06 - useEffect hook with TypeScript */}
-      <Example />
+      06 - useEffect hook with TypeScript 
+      <Example /> */}
     </div>
   );
 };
