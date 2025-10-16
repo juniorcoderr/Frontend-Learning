@@ -40,6 +40,10 @@
 // import Solution from "./components/12-Custom-Hooks/02-Solution/Solution";
 // import UniqueID from "./components/10-Hooks/06-useId/UniqueID";
 
+import ExampleOne from "./components/12-Custom-Hooks/03-Storage/01-useState/ExampleOne";
+import ExampleTwo from "./components/12-Custom-Hooks/03-Storage/02-useLocalStorage/ExampleTwo";
+import ExampleThree from "./components/12-Custom-Hooks/03-Storage/03-useSessionStorage/ExampleThree";
+
 const App = () => {
   return (
     <div>
@@ -123,7 +127,12 @@ const App = () => {
 
       {/* 15 - Custom hook 
       <Problem /> 
-      <Solution /> */}
+      <Solution /> 
+      
+      Implementing the example for the useState, localStorage, sessionStorage */}
+      <ExampleOne />
+      <ExampleTwo />
+      <ExampleThree />
 
       {/* 16 - useId hook 
       <UniqueID /> */}
