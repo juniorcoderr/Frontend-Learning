@@ -3,7 +3,12 @@
 import useFetch from "./useFetch";
 
 const Solution = () => {
-  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos"); // now we can fetch this data in all of our component
+  const { data, loading, error } = useFetch(
+    "https://jsonplaceholder.typicode.com/todos"
+  ); // now we can fetch this data in all of our component
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div>
